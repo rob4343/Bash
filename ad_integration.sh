@@ -36,18 +36,6 @@ function hostfn {
      echo "The new hostname is $NEW_HOSTNAME"
 }  
 
-function AD_add { 
-    discover_ad=$(realm discover ad.desynova.com)
-    SSSD_config=$(cat /etc/sssd/sssd.conf)
-
-    # Display the current hostname
-    echo "The AD Discovery is $discover_ad"
-    
-    #run the command
-    sudo realm join ad.desynova.com
-    
-    
-}
 
 
 
